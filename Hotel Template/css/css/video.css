@@ -1,0 +1,160 @@
+/* ==========================================" Start Video "================================================ */
+.video {
+  padding: 3rem 0;
+}
+.video .boxo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.video .boxo .boxseso {
+  width: calc(100% / 2);
+}
+
+/* Start left */
+.video .boxo .lefto {
+  background-color: #0f172b !important;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.video .boxo .lefto .min-left {
+  padding: 3rem;
+}
+.video .boxo .lefto .min-left h6 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+.video .boxo .lefto .min-left h6::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -50%;
+  margin-top: -1px;
+  background: var(--primary);
+  display: inline-block;
+}
+.video .boxo .lefto .min-left h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+.video .boxo .lefto .min-left h1,
+.video .boxo .lefto .min-left p {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.video .boxo .lefto .min-left .link a {
+  line-height: 3.5;
+  cursor: pointer;
+}
+
+.video .boxo .lefto .min-left .link .a-1 {
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #fff;
+  padding: 1rem 3rem;
+  margin-right: 1rem;
+  background-color: #fea116;
+  border-color: #fea116;
+  font-weight: 600;
+}
+.video .boxo .lefto .min-left .link .a-1:hover {
+  background-color: #f7b450;
+}
+
+.video .boxo .lefto .min-left .link .a-2 {
+  text-transform: uppercase;
+  transition: 0.5s;
+  padding: 1rem 3rem;
+  color: #000;
+  background-color: #f1f8ff;
+  border-color: #f1f8ff;
+  font-weight: 600;
+}
+/* End left */
+
+/* Start Right */
+.video .boxo .righto .img {
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  background: linear-gradient(rgba(15, 23, 43, 0.1), rgba(15, 23, 43, 0.1)),
+    url(../../img/carousel-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.video .boxo .righto .img button {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  padding: 18px 20px 18px 28px;
+  cursor: pointer;
+}
+.video .boxo .righto .img button::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: var(--primary);
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+.video .boxo .righto .img button::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: var(--primary);
+  border-radius: 50%;
+  transition: all 200ms;
+}
+.video .boxo .righto .img button span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 32px solid var(--dark);
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+}
+/* End Right */
+
+/* --------------------------------------------" End Video "------------------------------------------------ */
+
+/* Start Script Animation */
+.video {
+  opacity: 0;
+  transform: scale3d(0.3, 0.3, 0.3);
+  transition: opacity 0.1s linear, transform 0.5s linear;
+}
+
+.video.show {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+/* End Script Animation */

@@ -1,0 +1,44 @@
+@media (max-width: 1400px) {
+  .box-input .inside-box-input {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1199px) {
+  .box-input .inside-box-input {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .box-input .inside-box-input {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .box-input .inside-box-input {
+    max-width: 540px;
+  }
+
+  .box-input .inside-box-input {
+    width: 100%;
+    padding: 0 0.75rem;
+  }
+  .box-input .inside-box-input .container {
+    flex-direction: column;
+  }
+
+  .box-input .inside-box-input .container .inputs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box-input .inside-box-input .container .inputs .one,
+  .box-input .inside-box-input .container .inputs .two,
+  .box-input .inside-box-input .container .inputs .three,
+  .box-input .inside-box-input .container .inputs .four {
+    width: 100%;
+  }
+
+  .box-input .inside-box-input .container .submit {
+    width: 100%;
+  }
+}

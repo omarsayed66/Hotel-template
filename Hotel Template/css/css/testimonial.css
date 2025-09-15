@@ -1,0 +1,112 @@
+/* ======================================" Start Testimonials "============================================= */
+.testimonial {
+  background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7)),
+    url(../../img/carousel-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 0;
+  margin: 3rem 0;
+}
+
+.testimonial .container {
+  margin: 0 auto;
+}
+
+.testimonial .container .min-cont {
+  position: relative;
+  padding: 3rem 65px;
+}
+
+.testimonial .container .min-cont .conto {
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonial .container .min-cont .conto .width-box {
+  display: flex;
+  gap: 25px;
+  transition: transform 0.6s ease;
+}
+
+.testimonial .container .min-cont .conto .width-box .all-box {
+  flex: 0 0 calc(50% - 12.5px);
+  max-width: calc(50% - 12.5px);
+}
+
+.testimonial .container .min-cont .conto .width-box .all-box .min-all-box {
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+}
+
+.testimonial .container .min-cont .conto .width-box .all-box .min-all-box p {
+  margin-bottom: 1rem;
+}
+
+.testimonial .container .min-cont .conto .width-box .all-box .img {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.testimonial .container .min-cont .conto .width-box .all-box i {
+  color: #fea116;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.testimonial .container .min-cont .button {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.testimonial .container .min-cont .button .buttons {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #fea116;
+  border-radius: 2px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.testimonial .container .min-cont .button .buttons:hover {
+  background-color: #fff;
+  color: #fea116;
+}
+
+/* -----------------------------------------" End Testimonials "-------------------------------------------- */
+
+/* Start Script Animation */
+.testimonial {
+  opacity: 0;
+  transform: scale3d(0.3, 0.3, 0.3);
+  transition: opacity 0.1s linear, transform 0.5s linear;
+}
+
+.testimonial.show {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+.button-two.disabled,
+.button-two:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* End Script Animation */

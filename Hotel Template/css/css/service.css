@@ -1,0 +1,132 @@
+/* ==========================================" Start Service "================================================ */
+.service {
+  padding: 3rem 0.75rem;
+}
+.service .container {
+  padding: 0 0.75rem;
+  margin: 0 auto;
+}
+
+/* Start header */
+/* ====" Main Style File "==== */
+/* End Header */
+
+/* Start All Boxses */
+.service .box-s {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service .box-s .boxses-s {
+  max-width: 100%;
+  padding-right: calc(1.5rem / 2);
+  padding-left: calc(1.5rem / 2);
+  margin-top: 1.5rem;
+}
+
+.service .box-s .boxses-s a {
+  height: 320px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s;
+}
+.service .box-s .boxses-s a:hover {
+  background-color: #fea116 !important;
+}
+.service .box-s .boxses-s a:hover i,
+.service .box-s .boxses-s a:hover h5,
+.service .box-s .boxses-s a:hover p {
+  color: white !important;
+}
+.service .box-s .boxses-s a .icon {
+  margin: 0 auto 30px auto;
+  width: 65px;
+  height: 65px;
+  transition: 0.5s;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0) !important;
+  padding: 0.25rem !important;
+  border: 1px solid #dee2e6 !important;
+}
+.service .box-s .boxses-s a .icon .icon-i {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #dee2e6 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+.service .box-s .boxses-s a .icon .icon-i i {
+  color: #fea116;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.service .box-s .boxses-s a h5 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.service .box-s .boxses-s a p {
+  color: rgb(102, 101, 101) !important;
+}
+/* End All Boxses */
+
+/* -------------------------------------------" End Service "----------------------------------------------- */
+
+/* Start Script Animation */
+.service .container .boxses-s {
+  opacity: 0;
+  transform: translatey(50%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.service .container .head-room {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.service .container .head-room.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.05s;
+}
+.service .container .box-1.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+.service .container .box-2.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+.service .container .box-3.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.service .container .box-4.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+.service .container .box-5.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+.service .container .box-6.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+/* End Script Animation */

@@ -1,0 +1,307 @@
+/* =========================================" Start Contact "=============================================== */
+.contact {
+  padding: 3rem 0.75rem;
+}
+.contact .container {
+  padding: 0 0.75rem;
+  margin: auto;
+}
+
+/* Start Media */
+@media (max-width: 1400px) {
+  .contact .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1199px) {
+  .contact .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .contact .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .container {
+    max-width: 540px;
+  }
+  .contact .container .top .min-top {
+    flex-direction: column;
+  }
+  .contact .container .left,
+  .contact .container .right {
+    flex-direction: column;
+  }
+}
+/* End Media */
+
+.contact .min {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(1.5rem * -1);
+  margin-right: calc(1.5rem / -2);
+  margin-left: calc(1.5rem / -2);
+}
+
+/* Start Header */
+.contact .header {
+  text-align: center;
+}
+
+.contact .header h6 {
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  color: #fea116;
+}
+.contact .header h6::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  left: -55px;
+  margin-top: -1px;
+  background: var(--primary);
+}
+.contact .header h6::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -55px;
+  margin-top: -1px;
+  background: var(--primary);
+}
+.contact .header h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  margin-bottom: 1.5rem;
+}
+.contact .header h1 span {
+  color: #fea116;
+  text-transform: uppercase;
+}
+/* End Header */
+
+.contact .min .top,
+.contact .min .left,
+.contact .min .right {
+  width: 100%;
+  flex: 0 0 auto;
+  max-width: 100%;
+  padding-right: calc(1.5rem / 2);
+  padding-left: calc(1.5rem / 2);
+  margin-top: 1.5rem;
+}
+
+/* Start Top */
+.contact .min .top .min-top {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.contact .min .top .min-top .box {
+  width: calc(100% / 3);
+  padding-right: calc(1.5rem / 2);
+  padding-left: calc(1.5rem / 2);
+  margin-top: 1.5rem;
+}
+
+.contact .min .top .min-top .box h6 {
+  text-transform: uppercase;
+  color: rgb(254, 161, 22);
+  text-align: left;
+  position: relative;
+  display: inline-block;
+}
+.contact .min .top .min-top .box h6::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -55px;
+  margin-top: -1px;
+  background: var(--primary);
+}
+.contact .min .top .min-top .box p {
+  margin-bottom: 1rem;
+}
+.contact .min .top .min-top .box p i {
+  color: rgb(254, 161, 22);
+  margin-right: 0.5rem;
+  font-weight: 900;
+}
+/* End Top */
+
+/* Start Left */
+.contact .min .left,
+.contact .min .right {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.contact .min .left iframe {
+  min-height: 350px;
+  border: 0;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* End Left */
+
+/* Start Right */
+.contact .right .cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(1rem * -1);
+  margin-right: calc(1rem / -2);
+  margin-left: calc(1rem / -2);
+}
+
+.contact .right .cont .one,
+.contact .right .cont .two {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.contact .right .cont .three,
+.contact .right .cont .four,
+.contact .right .cont .five {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.contact .right .cont .inputs {
+  max-width: 100%;
+  padding-right: calc(1rem / 2);
+  padding-left: calc(1rem / 2);
+  margin-top: 1rem;
+}
+.contact .right .cont .inputs .input-cont {
+  position: relative;
+}
+
+.contact .right .cont .inputs .input-cont .form-control {
+  height: calc(3.5rem + 2px);
+  padding: 1rem 0.75rem;
+}
+.contact .right .cont .inputs .input-cont .form-control {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666565;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 2px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.contact .right .cont .inputs .input-cont label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem 0.75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.contact .right .cont .five button {
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s;
+  padding: 1rem 0;
+  background-color: #fea116;
+  border-color: #fea116;
+  width: 100%;
+
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.contact .right .cont .five button:hover {
+  background-color: #feaf39;
+  border-color: #feaa2d;
+}
+
+/* Start Focus */
+.contact .right .cont .inputs .input-cont input:focus,
+.contact .right .cont .inputs .input-cont textarea:focus {
+  color: #666565;
+  background-color: #fff;
+  border-color: #ffd08b;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(254, 161, 22, 0.25);
+}
+
+.contact .right .cont .inputs .input-cont input:focus ~ label,
+.contact .right .cont .inputs .input-cont input:not(:placeholder-shown) ~ label,
+.contact
+  .right
+  .cont
+  .inputs
+  .input-cont
+  textarea:not(:placeholder-shown)
+  ~ label,
+.contact .right .cont .inputs .input-cont textarea:focus ~ label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+/* اخفاء الـ placeholder */
+.contact .right .cont .inputs .input-cont .form-control::placeholder {
+  color: transparent;
+}
+
+.input-cont > .form-control:focus,
+.input-cont > .form-control:not(:placeholder-shown) {
+  padding-top: 1.625rem !important;
+  padding-bottom: 0.625rem !important;
+}
+/* End Focus */
+
+/* End Right */
+
+/* ------------------------------------------" End Contact "------------------------------------------------ */
+
+/* Start Script Animation */
+.contact .right {
+  opacity: 0;
+  transform: translatey(50%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.contact .head-room {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.contact .head-room.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.05s;
+}
+.contact .right.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+/* End Script Animation */

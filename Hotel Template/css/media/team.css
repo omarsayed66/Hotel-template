@@ -1,0 +1,31 @@
+@media (max-width: 1400px) {
+  .team .container {
+    max-width: 1140px;
+  }
+  .team .container .boxxat .m-p-boxx {
+    width: calc(100% / 4);
+  }
+}
+@media (max-width: 1199px) {
+  .team .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .team .container {
+    max-width: 720px;
+  }
+  .team .container .boxxat .m-p-boxx {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 768px) {
+  .team .container {
+    max-width: 540px;
+  }
+  .team .container .boxxat .m-p-boxx {
+    width: calc(100% / 1);
+  }
+}
+@media (max-width: 567px) {
+}

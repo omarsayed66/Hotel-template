@@ -1,0 +1,173 @@
+/* ==========================================" Start Slide "================================================ */
+.slide {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.6s ease;
+  height: 100%;
+}
+
+.slides {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 23, 43, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Start Content */
+.slide .slides .content {
+  max-width: 700px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.slide .slides .content h6 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+
+/* Note Style Of Before And After In Style File */
+
+.slide .slides .content h1 {
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  font-size: calc(1.3rem + 3.3vw);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.slide .slides .content a:nth-child(3) {
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #fff;
+  padding: 1rem 3rem;
+  margin-right: 1rem;
+  background-color: #fea116;
+  border-color: #fea116;
+  font-weight: 600;
+}
+.slide .slides .content a:nth-child(3):hover {
+  background-color: #f7b450;
+}
+
+.slide .slides .content a:nth-child(4) {
+  text-transform: uppercase;
+  transition: 0.5s;
+  padding: 1rem 3rem;
+  color: #000;
+  background-color: #f1f8ff;
+  border-color: #f1f8ff;
+  font-weight: 600;
+}
+/* End Content */
+/* Two Buttons For Slide */
+.slide button {
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.slide button:hover {
+  opacity: 1;
+}
+
+.slide button i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.slide button:nth-child(3) {
+  right: 0;
+}
+
+.slide button i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* End Button */
+
+/* -------------------------------------------" End Slide "------------------------------------------------- */
+
+/* Script Animation */
+
+.slide .slides .h6-slide {
+  transform: translateY(-20px);
+  transition: ease-out 0.7s !important;
+}
+
+.slide .slides .h1-slide {
+  transform: translateY(-100px);
+  transition: ease-out 0.7s !important;
+}
+
+.slide .slides .h6-slide.animate,
+.slide .slides .h1-slide.animate {
+  transform: translateY(0);
+}
+
+.slide .slides .link-slide-left,
+.slide .slides .link-slide-right {
+  transition: transform 0.7s ease-out !important;
+}
+
+.slide .slides .link-slide-left {
+  transform: translateX(-150px);
+}
+.slide .slides .link-slide-right {
+  transform: translateX(150px);
+}
+
+.slide .slides .link-slide-left.animate,
+.slide .slides .link-slide-right.animate {
+  transform: translateX(0);
+}
+
+/* روابط السلايدر */
+.slide .slides .link-slide-left,
+.slide .slides .link-slide-right {
+  display: inline-block; /* مهم لتحريكها بالترانسليت */
+  margin: 0; /* إزالة أي margin يؤثر على الحركة */
+  padding: 10px 20px; /* حجم مناسب بدون زيادة كبيرة */
+  transition: transform 1s; /* الحركة بس */
+  position: relative; /* لتجنب أي تأثير من الأب */
+}
+
+/*  End Script Animation  */

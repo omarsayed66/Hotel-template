@@ -1,0 +1,35 @@
+/* ========================================" Start Back To Top "============================================= */
+#top {
+  color: #fff;
+  background-color: #fea116;
+  border-color: #fea116;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 2px;
+  width: 48px;
+  height: 48px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+  font-size: 1.25rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+/* Start Scipt Animation */
+#top.show {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+/* End Scipt Animation */
+
+/* ---------------------------------------" End Back To Top "---------------------------------------------- */

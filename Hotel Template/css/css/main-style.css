@@ -1,0 +1,136 @@
+/* For Reset Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+:root {
+  --primary: #fea116;
+  --light: #f1f8ff;
+  --dark: #0f172b;
+  --rgb: #ffffffb3;
+}
+
+/*For Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font Family For All */
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+/* Styles For h1 To h6 Only */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgb(15, 23, 43);
+}
+
+h5,
+h6 {
+  font-size: 1rem;
+}
+
+/* For All P */
+p {
+  color: rgb(0 0 0 / 70%);
+}
+
+/* For All a */
+a {
+  text-decoration: none;
+}
+
+/* تظليل أو تغيير اللون للينك النشط */
+#nav a.active {
+  color: #fea116; /* لون مميز */
+  font-weight: bold; /* يخلي الخط عريض */
+  /* border-bottom: 2px solid #fea116;  */
+}
+
+.nav-item .dropdown-menu a.active {
+  background-color: #fea116 !important;
+  color: #fff !important;
+}
+
+/* لو الزرار بتاع الصفحات (Page) بقى Active */
+#page.active {
+  color: #fea116 !important;
+}
+
+/* Header Style OF Some Sections " Room " , " Service " And " Team " In One Code */
+
+/* Start Header */
+.room .header,
+.service .header,
+.team .header {
+  text-align: center;
+}
+.room .header h6,
+.service .header h6,
+.team .header h6 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  color: #fea116;
+}
+
+.room .header h6::before,
+.service .header h6::before,
+.team .header h6::before,
+.slide .slides .content h6::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  left: -55px;
+  margin-top: -1px;
+  background: var(--primary);
+}
+.room .header h6::after,
+.service .header h6::after,
+.team .header h6::after,
+.slide .slides .content h6::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -55px;
+  margin-top: -1px;
+  background: var(--primary);
+}
+
+.room .header h1,
+.service .header h1,
+.team .header h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  margin-bottom: 1.5rem;
+}
+.room .header h1 span,
+.service .header h1 span,
+.team .header h1 span {
+  color: #fea116;
+  text-transform: uppercase;
+}
+/* End Header */

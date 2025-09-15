@@ -1,0 +1,191 @@
+/* ==========================================" Start Footer "=============================================== */
+footer {
+  position: relative;
+  margin-top: -110px;
+  padding-top: 180px;
+  background-color: #0f172b;
+  color: #f1f8ff;
+  padding: 180px 0.75rem 0 0.75rem;
+  margin: -110px auto 0 auto;
+}
+/* Start Top */
+footer .top {
+  padding: 0 0.75rem 3rem;
+  margin: 0 auto;
+}
+footer .top .boxs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(3rem * -1);
+  margin-right: calc(3rem / -2);
+  margin-left: calc(3rem / -2);
+}
+footer .top .boxs .box {
+  max-width: 100%;
+  padding-right: calc(3rem / 2);
+  padding-left: calc(3rem / 2);
+  margin-top: 3rem;
+}
+footer .top .boxs .box-11 .box-p {
+  background-color: #fea116;
+  border-radius: 2px;
+  padding: 1.5rem;
+}
+footer .top .boxs .box-11 .box-p a {
+  color: #fea116;
+  text-decoration: none;
+}
+footer .top .boxs .box-11 .box-p a h1 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: calc(1.375rem + 1.5vw);
+}
+footer .top .boxs .box-11 .box-p p {
+  color: #fff;
+}
+footer .top .boxs .box-11 .box-p p a {
+  color: #0f172b;
+  text-decoration: none;
+}
+footer .top .boxs h6 {
+  color: #fea116;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  text-align-last: left;
+  margin-bottom: 1.5rem;
+}
+footer .top .boxs h6::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -55px;
+  margin-top: -1px;
+  background-color: #fea116;
+}
+footer .top .boxs .box-22 {
+  width: fit-content !important;
+}
+footer .top .boxs .box-22 p {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+footer .top .boxs .box-22 p i {
+  margin-right: 1.5rem;
+}
+footer .top .boxs .box-22 .icons {
+  padding-top: 0.5rem;
+  display: flex;
+}
+footer .top .boxs .box-22 .icons a {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  border: 1px solid #ffffff;
+  border-radius: 35px;
+  transition: 0.3s;
+}
+footer .top .boxs .box-22 .icons a:hover {
+  color: var(--primary);
+  background-color: #fff;
+}
+footer .top .boxs .box-33 .min-box-33 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(3rem * -1);
+  margin-right: calc(1.5rem / -2);
+  margin-left: calc(1.5rem / -2);
+}
+footer .top .boxs .box-33 .min-box-33 .left,
+footer .top .boxs .box-33 .min-box-33 .right {
+  max-width: 100%;
+  padding: 0 0.75rem;
+  margin-top: 3rem;
+  width: calc(100% / 2);
+}
+
+footer .top .boxs .box-33 .min-box-33 a {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+footer .top .boxs .box-33 .min-box-33 a::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+footer .top .boxs .box-33 .min-box-33 a:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+/* End Top */
+
+/* Start Bottom */
+footer .bottom {
+  padding: 0 0.75rem;
+  margin: 0 auto;
+}
+footer .bottom .bottom-p {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, 0.1);
+}
+footer .bottom .bottom-p .cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(0 * -1);
+  margin-right: calc(1.5rem / -2);
+  margin-left: calc(1.5rem / -2);
+}
+footer .bottom .bottom-p .cont .lefto,
+footer .bottom .bottom-p .cont .righto {
+  width: calc(100% / 2);
+  max-width: 100%;
+  padding-right: calc(1.5rem / 2);
+  padding-left: calc(1.5rem / 2);
+  margin-top: 0;
+}
+footer .bottom .bottom-p .cont .lefto a {
+  color: var(--light);
+  border-bottom: 1px solid #dee2e6;
+  text-decoration: none;
+}
+footer .bottom .bottom-p .cont .righto .footer-menu {
+  text-align: right;
+}
+footer .bottom .bottom-p .cont .righto .footer-menu a {
+  color: var(--light);
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* End Bottom */
+
+/* -----------------------------------------" End Footer "------------------------------------------------- */
+
+/* Start Script Animation */
+footer {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+footer.show {
+  opacity: 1;
+}
+
+/* End Script Animation */

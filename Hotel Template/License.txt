@@ -1,0 +1,19 @@
+Hotel Template - License
+
+All code (HTML, CSS, JS) is created by the author and provided for use
+under the Envato/ThemeForest license terms.
+
+Images:
+-------
+Demo images used in this template are for demonstration only.
+Replace them with your own licensed images before resale.
+
+Fonts:
+------
+Fonts included are provided for demo purposes. Use fonts according to their license.
+
+Icons:
+------
+Font files for Font Awesome are included for offline use.
+
+This template can only be distributed according to Envato license terms.

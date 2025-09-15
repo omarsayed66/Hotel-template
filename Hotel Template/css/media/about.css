@@ -1,0 +1,65 @@
+@media (max-width: 1400px) {
+  .about .inside-about {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1199px) {
+  .about .inside-about {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .about .inside-about {
+    max-width: 720px;
+  }
+  .about .inside-about .container {
+    display: block;
+  }
+  .about .inside-about .container .left,
+  .about .inside-about .container .right {
+    width: calc(100% / 1);
+  }
+}
+@media (max-width: 768px) {
+  .about .inside-about {
+    max-width: 540px;
+  }
+}
+@media (max-width: 567px) {
+  .about {
+    padding: 3rem 0;
+  }
+  .about .inside-about {
+    padding: 0;
+    margin-top: -3rem;
+  }
+  .about .inside-about .container .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .inside-about .container .left .box {
+    align-self: stretch;
+    flex-direction: column;
+  }
+  .about .inside-about .container .left .box .boxses {
+    width: 100%;
+  }
+  .about .inside-about .container .left h6,
+  .about .inside-about .container .left h1,
+  .about .inside-about .container .left p,
+  .about .inside-about .container .left a {
+    text-align: center;
+  }
+  .about .inside-about .container .left h6::before {
+    display: unset;
+  }
+  .about .inside-about .container .left h6::before,
+  .about .inside-about .container .left h6::after {
+    text-align: center;
+  }
+  .about .inside-about .container .left a {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,233 @@
+/* ==========================================" Start Header "================================================ */
+header {
+  background-color: var(--dark);
+  display: flex;
+}
+
+/* Start Logo */
+header .h1-box {
+  padding: 1rem;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header a h1 {
+  color: var(--primary);
+  font-size: calc(1.375rem + 1.5vw);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* End Logo */
+
+/* Start The Right Side Of Header */
+
+header .right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+/* End The Right Side Of Header */
+
+/* Start The Up Of Right Side Of Header */
+header .right .up {
+  height: calc(100% / 4);
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 0;
+}
+
+header .right .up .left {
+  width: calc(100% / 10);
+  flex: 6;
+  display: flex;
+  text-align: left;
+  gap: 2rem;
+  align-items: center;
+}
+header .right .up .left,
+header .right .up .right {
+  padding: 0 3rem;
+  height: 100%;
+}
+header .right .up .left .lef {
+  display: flex;
+  align-items: center;
+}
+header i,
+header i {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+header .right .up .left .righ {
+  display: flex;
+}
+header .right .up .right {
+  width: calc(100% / 10);
+  flex: 4;
+  justify-content: center;
+}
+
+header .right .up .right .icons {
+  text-align: right;
+}
+header .right .up .right .icons i {
+  margin-right: 1rem;
+  transition: all 0.3s;
+}
+header .right .up .right .icons i:hover {
+  color: #cb8112;
+}
+
+/* End The Up Of Right Side Of Header */
+
+/* Start The Down Of Right Side Of Header */
+header .right .down {
+  height: calc(100% / 4);
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* End The Down Of Right Side Of Header */
+
+/* Start The Nav Of Down Of Right Side Of Header */
+
+header .right .down nav {
+  display: flex;
+}
+header .right .down nav a {
+  padding: 25px 0;
+  margin-right: 30px;
+  color: var(--light);
+  font-size: 0.94rem;
+  text-transform: uppercase;
+  outline: none;
+  font-family: "Heebo", sans-serif;
+  transition: all 0.3s;
+}
+
+header .right .down nav a:hover {
+  color: var(--primary);
+}
+
+#page:hover#page + a {
+  color: var(--primary);
+}
+
+/* Start The Drop Menu Of Page Nav */
+
+header .right .down nav .nav-item {
+  display: inline-flex;
+  position: relative;
+}
+
+.dropdown-menu.active {
+  display: block;
+}
+
+#page.active {
+  color: var(--primary);
+}
+
+#arrow.active {
+  color: var(--primary) !important;
+}
+
+.dropdown-menu {
+  position: absolute !important;
+  z-index: 2;
+  min-width: 10rem;
+  font-size: 1rem;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 0.5rem 0 !important;
+  line-height: 1;
+  top: 71px;
+  transition: all 0.5s;
+  transform: rotatex(-90deg);
+  transform-origin: 0% 0%;
+}
+
+.dropdown-menu.active-rot {
+  transform: rotatex(0deg);
+}
+.dropdown-item {
+  display: block;
+  padding: 0.7rem !important;
+  color: #212529 !important;
+  background-color: transparent;
+  width: 100%;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(0 0 0 / 10%);
+}
+/* Start The Drop Menu Of Page Nav */
+
+header .right .down nav #arrow {
+  display: inline-block;
+  margin-right: 0.255rem;
+  vertical-align: 0.255rem;
+  content: "";
+  border-top: 0.3rem solid;
+  border-right: 0.3rem solid transparent;
+  border-bottom: 0;
+  border-left: 0.3rem solid transparent;
+  position: absolute;
+  top: 45%;
+  right: 12px;
+  color: #fff;
+}
+
+/* End The Nav Of Down Of Right Side Of Header */
+
+/* Start The Link Of Down Of Right Side Of Header */
+
+header .right .down .link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 1.5rem 3rem;
+  gap: 5px 15px;
+  height: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+header .right .down .link:hover {
+  background-color: #f7b450;
+}
+
+header .right .down .link a {
+  text-transform: uppercase;
+  color: var(--light);
+}
+header .right .down .link i {
+  color: var(--light);
+}
+/* End The Link Of Down Of Right Side Of Header */
+
+/* End The Down Of Right Side Of Header */
+
+/* End The Right Side Of Header */
+
+/* For Hidden The Button To Visible In 990px */
+button {
+  display: none;
+}
+/* Ending Button */
+
+/* -----------------------------------------" End Header "------------------------------------------------- */

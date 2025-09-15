@@ -1,0 +1,107 @@
+/* ======================================" Start Title Page  "============================================== */
+.title-page {
+  background-image: url(../../img/carousel-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+.title-page .overlay {
+  background: rgba(15, 23, 43, 0.7);
+  padding: 3rem 0;
+}
+.title-page .cont {
+  text-align: center;
+  padding-bottom: 3rem;
+  margin: auto;
+}
+
+/* Start Responsive */
+@media (max-width: 1400px) {
+  .title-page .cont {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1199px) {
+  .title-page .cont {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .title-page .cont {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .title-page .cont {
+    max-width: 540px;
+  }
+}
+/* End Responsive */
+.title-page h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: calc(1.525rem + 3.3vw);
+  line-height: 1.2;
+}
+
+.title-page ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 0 0;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+.title-page ol a {
+  color: #fea116;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.title-page ol li:nth-child(3) {
+  color: #fff !important;
+}
+.title-page ol li:nth-child(1)::before,
+.title-page ol li:nth-child(2)::before {
+  color: var(--light) !important;
+  float: right;
+  padding: 0 0.5rem !important;
+  color: #6c757d;
+  content: var(--bs-breadcrumb-divider, "/")
+    /* rtl: var(--bs-breadcrumb-divider, "/") */;
+}
+.title-page ol a:nth-child(1):hover,
+.title-page ol a:nth-child(2):hover {
+  color: #cb8112;
+}
+
+/* -------------------------------------------" End Title Page "-------------------------------------------- */
+
+/* Start Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* End Animation */
+
+/* Start Script Animation */
+
+.title-page #h-1 {
+  opacity: 0;
+}
+
+/* Animate when class is added */
+.title-page #h-1.animate {
+  animation: fadeUp 1s ease forwards;
+}
+
+/* End Script Animation */
+
+/* ..........................................End Slide About............................................... */

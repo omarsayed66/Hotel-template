@@ -1,0 +1,135 @@
+/* ============================================" Start Team "=============================================== */
+.team {
+  padding: 3rem 0.75rem;
+}
+.team .container {
+  padding: 0 0.75rem;
+  margin: 0 auto;
+}
+
+/* Start header */
+/* ====" Main Style File "==== */
+/* End Header */
+
+/* Start All Boxses */
+.team .boxxat {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(1.5rem * -1);
+  margin-right: calc(1.5rem / -2);
+  margin-left: calc(1.5rem / -2);
+}
+
+.team .boxxat .m-p-boxx {
+  max-width: 100%;
+  padding-right: calc(1.5rem / 2);
+  padding-left: calc(1.5rem / 2);
+  margin-top: 1.5rem;
+}
+.team .boxxat .m-p-boxx .boxx {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border-radius: 2px;
+}
+.team .boxxat .m-p-boxx .boxx .img {
+  position: relative;
+}
+.team .boxxat .m-p-boxx .boxx .img img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.team .boxxat .m-p-boxx .boxx .img .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+}
+.team .boxxat .m-p-boxx .boxx .img .icons a {
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 2px;
+  margin: 0 0.25rem;
+  text-decoration: none;
+  background-color: #fea116;
+  border-color: #fea116;
+  transition: 0.3s;
+}
+
+.team .boxxat .m-p-boxx .boxx .img .icons a:hover {
+  background-color: #feb445;
+  border-color: #feaa2d;
+}
+
+.team .boxxat .m-p-boxx .boxx .word {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.team .boxxat .m-p-boxx .boxx .word small {
+  font-size: 0.875em;
+}
+/* End All Boxses */
+
+/* ------------------------------------------" End Team "-------------------------------------------------- */
+
+/* Start Script Animation */
+.team .container .boxses {
+  opacity: 0;
+  transform: translatey(50%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.team .container .head-room {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.team .container .head-room.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.05s;
+}
+.team .container .box-1.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+.team .container .box-2.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+.team .container .box-3.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.team .container .box-4.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+.team .container .box-5.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+.team .container .box-6.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+/* End Script Animation */

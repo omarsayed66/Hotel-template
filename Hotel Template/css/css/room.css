@@ -1,0 +1,175 @@
+/* ==========================================" Start Room "================================================= */
+.room {
+  padding: 3rem 0.75rem;
+  width: 100%;
+}
+
+.room .container {
+  padding: 0 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Start header */
+/* ====" Main Style File "==== */
+/* End Header */
+
+/* Start All Boxses */
+.room .container .box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 10px;
+}
+.room .container .box .boxses {
+  margin-top: 1.5em;
+  padding: 0 calc(1.5rem / 2);
+  max-width: 100%;
+  width: calc(100% / 3);
+}
+.room .container .box .boxses .mini-box {
+  border-radius: 2px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  overflow: hidden;
+}
+.room .container .box .boxses .mini-box .img {
+  position: relative;
+}
+.room .container .box .boxses .mini-box .img img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.room .container .box .boxses .mini-box .img small {
+  border-radius: 2px;
+  background-color: #fea116;
+  color: #fff;
+  padding: 0.25rem 1rem;
+  margin-left: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: translateY(-50%);
+  font-size: 0.875em;
+}
+.room .container .box .boxses .mini-box .content {
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.room .container .box .boxses .mini-box .content .top,
+.room .container .box .boxses .mini-box .content .center,
+.room .container .box .boxses .mini-box .content .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room .container .box .boxses .mini-box .content .top,
+.room .container .box .boxses .mini-box .content .center {
+  margin-bottom: 1rem;
+}
+.room .container .box .boxses .mini-box .content .top h5 {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+.room .container .box .boxses .mini-box .content .top .stars {
+  padding-left: 0.5rem;
+}
+.room .container .box .boxses .mini-box .content .top .stars small {
+  color: #fea116;
+  font-weight: 900;
+}
+
+.room .container .box .boxses .mini-box .content .center {
+  justify-content: flex-start;
+}
+.room .container .box .boxses .mini-box .content .center small {
+  font-size: 0.875em;
+}
+
+.room .container .box .boxses .mini-box .content .center small:nth-child(1),
+.room .container .box .boxses .mini-box .content .center small:nth-child(2) {
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 1px solid #dee2e6;
+}
+
+.room .container .box .boxses .mini-box .content .center small i {
+  color: #fea116;
+  margin-right: 0.5rem;
+}
+.room .container .box .boxses .mini-box .content p {
+  color: #666565;
+  margin-bottom: 1rem;
+}
+
+.room .container .box .boxses .mini-box .content .footer a {
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border-radius: 2px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.room .container .box .boxses .mini-box .content .footer a:nth-child(1) {
+  background-color: #fea116;
+  border-color: #fea116;
+}
+.room .container .box .boxses .mini-box .content .footer a:nth-child(2) {
+  background-color: #0f172b;
+  border-color: #0f172b;
+}
+/* End All Boxses */
+
+/* -------------------------------------------" End Room "-------------------------------------------------- */
+
+/* Start Script Animation */
+.room .container .boxses {
+  opacity: 0;
+  transform: translatey(50%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.room .container .head-room {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.room .container .head-room.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.05s;
+}
+.room .container .box-1.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+.room .container .box-2.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+.room .container .box-3.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.room .container .box-4.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+.room .container .box-5.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+.room .container .box-6.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+/* End Script Animation */

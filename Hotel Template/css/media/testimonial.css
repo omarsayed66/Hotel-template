@@ -1,0 +1,26 @@
+@media (max-width: 1400px) {
+  .testimonial .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1199px) {
+  .testimonial .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .testimonial .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonial .container {
+    max-width: 540px;
+  }
+  .testimonial .container .min-cont .conto .width-box .all-box {
+    flex: 0 0 100%; /* في الموبايل بوكس واحد */
+    max-width: 100%;
+  }
+}
+@media (max-width: 567px) {
+}
